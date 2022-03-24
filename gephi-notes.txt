@@ -1,0 +1,35 @@
+Some rough notes on how to make a graph in Gephi, just like the one on: https://labs.ripe.net/author/emileaben/how-is-russia-connected-to-the-wider-internet/
+
+step 1) Load the gdf file for a particular country
+
+step 2) Fiddle with graph settings:
+appearance , nodes , partitioning
+select clabel
+select color scheme
+
+node size icon, ranking
+choose attribute 'hege'
+min size:3 max size: 60
+
+
+layout:
+do 'openord' first (may not be needed)
+then do 'forceatlas2'
+ before run. modify
+    gravity 20 (OR 30)
+    prevent overlap
+
+
+under the graph:
+ label text settions
+   select 'hegelabel'   smaal font size
+
+   show labels ('T' icon)
+
+   make links 'grey'
+
+then run 'Noverlap'
+
+
+
+
