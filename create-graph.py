@@ -56,6 +56,11 @@ with open("input-asns.txt") as inf:
                 for k,v in temp_e.iteritems():
                     if v > thres: ### only if over X pct of pop
                         eyeball_weights[ str( k ) ] = v # stringify keys
+        elif line.startswith('{'): # different version of the hege code
+            temp_e = ast.literal_eval( line )
+            for k,v in temp_e.iteritems():
+                if v > thres: ### only if over X pct of pop
+                    eyeball_weights[ str( k ) ] = v # stringify keys
         else:
             line = line.rstrip('\n')
             f = line.split(', ')
