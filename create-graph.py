@@ -16,7 +16,7 @@ if len( sys.argv ) > 3:
 ### 2nd arg: date YYYY-MM-DD
 
 prettynames = {} #asn2name
-with open("prettynames.txt", 'rt') as inf:
+with open("asn-prettynames.txt", 'rt') as inf:
     for line in inf:
         line=line.rstrip('\n')
         f = line.split(' ')
